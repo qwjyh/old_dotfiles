@@ -34,6 +34,9 @@ if (Test-Path $script) {
   . $script
 }
 
+# git completion
+Import-Module posh-git
+
 # winget completion(source:https://docs.microsoft.com/en-us/windows/package-manager/winget/tab-completion)
 Register-ArgumentCompleter -Native -CommandName winget -ScriptBlock {
   param($wordToComplete, $commandAst, $cursorPosition)
