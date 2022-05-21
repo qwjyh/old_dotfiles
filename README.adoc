@@ -1,0 +1,14 @@
+= dotfiles
+
+== environments
+* *PowerShell 7* on Windows 10
+* *Fish* on WSL
+
+== how to use
+using [chezmoi](https://www.chezmoi.io/) for management
+
+== includes...
+`.confg/starship.toml`::
+config for starship(prompt)
+`Documents/PowerShell/Microsoft.PowerShell_profile.ps1`::
+powershell config
