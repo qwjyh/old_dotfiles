@@ -4,10 +4,12 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadlineOption -HistoryNoDuplicates
 Set-PSReadLineKeyHandler -Chord "Ctrl+f" -Function ForwardWord # like fish
 Set-PSReadLineKeyHandler -Chord "Tab" MenuComplete
+Set-PSReadLineKeyHandler -Chord "Ctrl+d" DeleteCharOrExit
 
 function ~ {  cd ~  }
 function .. { cd .. }
 function epl {explorer.exe .}
+Set-Alias touch New-Item
 
 
 # starship
