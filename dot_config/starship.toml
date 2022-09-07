@@ -65,6 +65,10 @@ format = "$symbol [${ram}( | ${swap})]($style) "
 symbol = ""
 disabled = false
 
+[ocaml]
+#format = "via [$symbol($version )(\($switch_indicator$switch_name\) )]($style)"
+format = "$symbol"
+
 [python]
 format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 symbol = ""
